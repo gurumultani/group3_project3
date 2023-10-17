@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Disasters Dashboard</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Natural Disasters Dashboard</h1>
+    </header>
+    <div class="container">
+        <div class="controls">
+            <label for="topicSelect">Select Topic:</label>
+            <select id="topicSelect"></select>
+        </div>
+        <div class="chart">
+            <h2>Top 10 Countries by Index Trends</h2>
+            <div id="barChart"></div>
+        </div>
+        <!-- Container for the pie charts -->
+        <div class="pie-chart">
+            <h2>Top 10 Countries by Index Trends</h2>
+            <div id="top10PieChart" class="chart"></div>
+            <h2>Bottom 10 Countries by Index Trends</h2>
+            <div id="bottom10PieChart" class="chart"></div>
+        </div>
+    </div>
+    <div id="map" style="height: 500px;"></div> <!-- Add this div for the Leaflet map -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="static/js/script.js"></script>
+    <script>
+        // JavaScript code to create the Leaflet map goes here
+        var map = L.map('map').setView([37.8, -96], 4); // Initial center and zoom level
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+    </script>
+</body>
+</html>
+

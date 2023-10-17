@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('wp2381640-natural-disasters-wallpapers.jpg'); /* Background image */
+  background-size: cover;  /* Ensure the image covers the full viewport */
+  background-repeat: no-repeat; /* No repeating of the image */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* This makes sure the background image does not scroll */
+  color: #e52222; /* Setting a default text color for better readability */
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: hsla(109, 88%, 61%, 0.877);
+  color: rgb(28, 57, 31);
+  padding: 8px px;
+  font-size: 8%;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e492e3;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #b6cf39;
+}
+.header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  border-bottom: 2px solid #333; /* This creates a long line under your header */
+  padding: 10px 0;
+}
+
+/* Adjusted styles for the dropdown button to fit within the header */
+.dropbtn {
+  background-color: hsla(109, 88%, 61%, 0.877);
+  color: rgb(28, 57, 31);
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex; /* Added for horizontal alignment of icon and text */
+  align-items: center; /* Align items in vertical center */
+}
+
+/* Add some margin right to the search icon for spacing */
+.fas.fa-search {
+  margin-right: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  /* other styles like positioning, background, etc. */
+}
